@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(0,0,0,0.7), rgb(255,255,255,0.1)) , url(image/spring.jpg) no-repeat center/cover ;
+}
+#weather{
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    background: url(image/spring.jpg) no-repeat center/cover;
+}
+.summer{
+    background: linear-gradient(to top, rgb(0,0,0,0.7), rgb(255,255,255,0.1)) , url(image/summer.jpg) no-repeat center/cover ;
+
+}
+.summer #weather{
+    background: url(image/summer.jpg) no-repeat center/cover;
+}
+.spring{
+    background: linear-gradient(to top, rgb(0,0,0,0.7), rgb(255,255,255,0.1)) , url(image/spring.jpg) no-repeat center/cover ;
+
+}
+.spring #weather{
+    background: url(image/spring.jpg) no-repeat center/cover;
+}
+.autumn{
+    background: linear-gradient(to top, rgb(0,0,0,0.7), rgb(255,255,255,0.1)) , url(image/autumn.jpg) no-repeat center/cover ;
+
+}
+.autumn #weather{
+    background: url(image/autumn.jpg) no-repeat center/cover;
+}
+.winter{
+    background: linear-gradient(to top, rgb(0,0,0,0.7), rgb(255,255,255,0.1)) , url(image/winter.jpg) no-repeat center/cover ;
+
+}
+.winter #weather{
+    background: url(image/winter.jpg) no-repeat center/cover;
+}
+#weather .search {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    background: rgb(255,255,255,0.4);
+    box-shadow: 0 4px 4px rgb(0,0,0,0.3);
+    transition: 0.4s;
+    font-size: 20px;
+}
+#weather .search:focus{
+    background: rgba(255, 255, 255, 0.886);
+    border-radius: 0 10px 0 10px;
+}
+#weather .content{
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+}
+#weather .content .capital {
+    text-shadow: 3px 3px  rgb(0,0,0,0.4);
+    font-size: 35px;
+}
+#weather .content .time{
+    font-size: 15px;
+    margin: 5px 0 40px 0;
+}
+#weather .content .temperature{
+    background-color: rgb(255,255,255,0.4);
+    font-size: 60px;
+    padding: 30px 0;
+    margin: 0 40px;
+    text-shadow: 4px 4px rgb(0,0,0,0.2);
+    box-shadow: 4px 5px 4px rgb(0,0,0,0.4);
+    border-radius: 3px;
+}
+#weather .content .short-desc{
+    margin: 40px 0;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px rgb(0,0,0,0.3);
+}
+#weather .content .more-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#weather .content .visibility , .wind , .sun{
+    display: flex;
+    flex-direction: column;
+}
+#weather .content .visibility i , .wind i, .sun  i {
+    margin-bottom: 10px;
+}
+.hiden{
+    visibility: hidden;
+    opacity: 0;
+}
